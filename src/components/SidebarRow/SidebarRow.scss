@@ -1,0 +1,40 @@
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: grey;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  @media (max-width: 700px) {
+    justify-content: center;
+    padding-left: 0;
+  }
+  &__icon {
+    margin-left: 20px;
+    font-size: 28px !important;
+  }
+  &__title {
+    margin-left: 15px;
+    font-weight: normal;
+    font-size: 18px;
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+  &:hover {
+    background-color: lightgrey;
+  }
+  &.active {
+    background-color: #e0e0e0;
+    & > .sidebarRow__icon {
+      color: red;
+    }
+
+    & > .sidebarRow__title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #111;
+    }
+  }
+}
