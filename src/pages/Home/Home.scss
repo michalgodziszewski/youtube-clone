@@ -1,3 +1,10 @@
 .home {
   flex: 0.8;
+  padding: 20px;
+  &__videoList {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

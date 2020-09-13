@@ -2,6 +2,7 @@ import { GET_RECOMMENDED_VIDEOS } from "../actions/types";
 
 const initialState = {
   videos: [],
+  loading: true,
 };
 
 export default function (state = initialState, action) {
@@ -10,6 +11,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         videos: action.payload,
+        loading: false,
       };
     default:
       return state;
